@@ -1,15 +1,33 @@
 // Load the Express module on our server
 const express = require('express');
 
+// import routers
+const indexRouter = require('./routes/index.js')
+const peopleRouter = require('./routes/people.js')
+
 // create new express server
-const app = express();
+let app = express();
+
+
+// ********   Middleware      ******
+// parse JSON request sent by the user
+// and converts it into JS object before
+// a route uses it
+app.use(express.json());
+
+
+// **** Routes *****
+// single path
+app.use('/', indexRouter);
+
+// multiple paths if routes are already in file
+app.use(peopleRouter)
 
 
 // Tells the server where to listen for requests
 const port = 3000;
 
 
-// paths number 1 
 // slash first 
 // then introduce nodemon 
 // do greetings after
@@ -94,6 +112,17 @@ app.get('/:name', function (req, res) {
     
     res.send(`Hello, ${req.params.name}, my name is ${req.query.first_name} ${req.query.last_name}`)
 });
+
+app.post('/a', function (req, res) {
+    // console.log(req);
+    console.log('TTT',req.body);
+
+    // console.log(req.body.person);
+    
+    // people.push(req.body.person)
+    
+    res.status(201).json({a:1})
+})
 
 
 
