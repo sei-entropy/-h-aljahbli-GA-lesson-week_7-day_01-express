@@ -565,11 +565,11 @@ Add a Route to List People:
 
 ```javascript
 let people = [
-  {firstName: 'Usman', lastName: 'Bashir'},
-  {firstName: 'Reem', lastName: 'AlHarbi'},
-  {firstName: 'Mansour', lastName: 'Almohsen'},
-  {firstName: 'Hazim', lastName: 'Alblowi'},
-];
+    {firstName: 'Hisham', lastName: 'Aljahbli'},
+    {firstName: 'Mohammad', lastName: 'Jouza'},
+    {firstName: 'Usman', lastName: 'Bashier'},
+    {firstName: 'Sager', lastName: 'Alarifi'}
+]
 
 app.get('/api/people', function(req, res) {
   res.json({ people: people });
