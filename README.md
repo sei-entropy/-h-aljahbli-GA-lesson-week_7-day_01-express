@@ -26,11 +26,6 @@
 
 <br />
 
-## Let's Talk About A World Without Magic
-
-![](./from-scratch.jpg)
-
-<br />
 
 ## Intro to Express
 
