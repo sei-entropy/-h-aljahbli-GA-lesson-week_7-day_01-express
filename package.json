@@ -1,0 +1,25 @@
+{
+  "name": "lesson-week_07-day_01-express",
+  "version": "1.0.0",
+  "description": "## Objectives",
+  "main": "server.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h-aljahbli-GA/-h-aljahbli-GA-lesson-week_07-day_01-express.git"
+  },
+  "author": "hisham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/h-aljahbli-GA/-h-aljahbli-GA-lesson-week_07-day_01-express/issues"
+  },
+  "homepage": "https://github.com/h-aljahbli-GA/-h-aljahbli-GA-lesson-week_07-day_01-express#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
